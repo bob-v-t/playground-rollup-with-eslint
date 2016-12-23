@@ -4,7 +4,7 @@ import { BurstManager } from './BurstManager.js';
 export var w$ = w$ || (function (win) {
   var initialized = false;
   /**
-   * Define the static variables that will be made available on the `w$` scope.
+   * Define the static variables that will be made available on the public `w$` scope.
    * Classes and functions will be initialized in the `init` function
    */
   var w$ = {
