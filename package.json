@@ -1,8 +1,12 @@
 {
   "devDependencies": {
-    "eslint": "^3.12.2"
+    "eslint": "^3.12.2",
+    "npm-run-all": "^3.1.2"
   },
   "scripts": {
-    "build" : "rollup src/core.js --output build/core.js --format iife"
+    "build-launch": "rollup src/launch.js --output build/launch.js --format iife",
+    "build-core": "rollup src/core.js --output build/core.js --format iife",
+    "copy-html": "cp src/tag.html build/tag.html",
+    "build": "npm-run-all --parallel build-launch build-core copy-html"
   }
 }

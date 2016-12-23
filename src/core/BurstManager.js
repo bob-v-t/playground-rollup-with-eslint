@@ -1,7 +1,9 @@
-export function BurstManager(w$, adperfobj) {
+export function BurstManager(w$, screenad) {
   return {
     doBurst: function() {
-      alert(adperfobj);
+      if (window !== top) {
+        console.log('BurstManager', screenad);
+      }
     }
   };
 }

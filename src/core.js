@@ -1,6 +1,6 @@
-/* globals adperfobj */
+/* globals screenad */
 import { square, w$ } from './core/ScreenadManager.js';
 
 window.w$ = w$;
 window.square = square;
-w$.render(adperfobj);
+w$.init(screenad);
