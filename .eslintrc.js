@@ -4,11 +4,10 @@ module.exports = {
         "es6": false
     },
     "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
     "rules": {
-        "indent": [
-            "warn",
-            2
-        ],
         "linebreak-style": [
             "error",
             "unix"

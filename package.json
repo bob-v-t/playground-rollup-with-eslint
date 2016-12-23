@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "eslint": "^3.12.2"
+  },
+  "scripts": {
+    "build" : "rollup src/core.js --output build/core.js --format iife"
   }
 }
